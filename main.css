@@ -1,0 +1,75 @@
+body{
+    font: normal 15pt Arial;
+    background-color: aqua;
+    
+    
+}
+
+div#background{
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(./background-image/aperture-vintage-SshYpuf607g-unsplash.jpg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    overflow: auto;
+    background-size: cover;
+    padding: 3em;
+    height: auto;
+    margin: auto;
+}
+
+img{
+    
+    max-width: 250px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    border-radius:200px;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+figure{
+    
+    align-self: center;
+}
+
+section{
+    
+    display: block;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+ul{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+li{
+    
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
