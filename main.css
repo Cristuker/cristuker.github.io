@@ -1,7 +1,8 @@
 body{
-    font: normal 15pt Arial;
+    font: normal 16pt Arial;
     background-color: aqua;
-    
+    color: white;
+    margin:0;
     
 }
 
@@ -19,42 +20,35 @@ div#background{
     background-size: cover;
     padding: 3em;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
 }
 
 img{
-    
-    max-width: 250px;
-    max-height: 350px;
+    width: 100%;
+    max-width: 200px;
+    max-height: 400px;
     width: auto;
     height: auto;
-    border-radius:200px;
+    border-radius:50px;
 }
 
 div.container{
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: auto;
+    margin: 0 auto;
 }
 
 figure{
+    margin: 0 auto;
     
-    align-self: center;
 }
 
 section{
-    
-    display: block;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: auto;
+  
 }
 
 ul{
-    
+
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -68,8 +62,8 @@ h2{
 }
 
 li{
-    
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
 }
