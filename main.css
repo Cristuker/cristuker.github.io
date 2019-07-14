@@ -31,12 +31,14 @@ div#background{
     width: auto;
     height: auto;
     border-radius:50px;
+    text-align: center;
 }
 
 div.container{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .container figure{
@@ -49,9 +51,9 @@ section{
 }
 
 div.list{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    
+    
+    justify-content: center;
 }
 .list ul{
     margin: 0 auto;
@@ -71,6 +73,7 @@ div.list{
     flex-direction: column;
     text-align: center;
     padding: 2px;
+    justify-content: center;
 }
 
 div.social{
@@ -78,6 +81,7 @@ div.social{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 a{
