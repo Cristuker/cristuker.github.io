@@ -1,15 +1,16 @@
 body{
-    font: normal 16pt Arial;
+    font-family: 'Quicksand', sans-serif;
     background-color: aqua;
     color: white;
     margin:0;
+    font-size: 16pt;
     
 }
 
 div#background{
     display: block;
     background-repeat: no-repeat;
-    background-image: url(./background-image/aperture-vintage-SshYpuf607g-unsplash.jpg);
+    background-image: url(./background-image/diego-ph-5LOhydOtTKU-unsplash.jpg);
     background-size: 100%;
     position: absolute;
     bottom: 0;
@@ -23,7 +24,7 @@ div#background{
     margin: 0 auto;
 }
 
-img{
+.container img{
     width: 100%;
     max-width: 200px;
     max-height: 400px;
@@ -38,7 +39,7 @@ div.container{
     margin: 0 auto;
 }
 
-figure{
+.container figure{
     margin: 0 auto;
  
 }
@@ -52,12 +53,11 @@ div.list{
     flex-direction: column;
     margin: 0 auto;
 }
-ul{
+.list ul{
     margin: 0 auto;
-  
 }
 
-h2{
+.list h2{
     
     display: flex;
     flex-flow: column;
@@ -65,10 +65,30 @@ h2{
     text-align: center;
 }
 
-li{
+.list li{
     display: flex;
     flex-flow: column;
     flex-direction: column;
     text-align: center;
+    padding: 2px;
 }
+
+div.social{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a{
+    align-self: center;
+    color: white;
+}
+.social i{
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+
 
