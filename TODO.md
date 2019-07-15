@@ -5,9 +5,11 @@
     [x] - Instagram
     [x] - Facebook
     [x] - GitHub
-    [x] - Steam
+    [X] - MeetUp
+    [X] - Spotify
 }
-[ ] - Sobre mim
+[x] - Idade com JS
+[x] - Sobre mim
 [x] - Foto
-[ ] - Deixar a imagem de fundo mais leve
-[ ] - Fazer o footer
+[x] - Deixar a imagem de fundo mais leve
+
