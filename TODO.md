@@ -11,5 +11,5 @@
 [x] - Idade com JS
 [x] - Sobre mim
 [x] - Foto
-[x] - Deixar a imagem de fundo mais leve
+[ ] - Deixar a imagem de fundo mais leve
 
