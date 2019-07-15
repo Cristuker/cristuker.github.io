@@ -10,7 +10,7 @@ body{
 div#background{
     display: block;
     background-repeat: no-repeat;
-    background-image: url(./background-image/diego-ph-5LOhydOtTKU-unsplash.jpg);
+    background-image: url(./background-image/16414.jpg);
     background-size: 100%;
     position: absolute;
     bottom: 0;
@@ -30,7 +30,7 @@ div#background{
     max-height: 400px;
     width: auto;
     height: auto;
-    border-radius:50px;
+    border-radius:10%;
     text-align: center;
 }
 
@@ -39,42 +39,14 @@ div.container{
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
+    text-align: center;
 }
 
 .container figure{
     margin: 0 auto;
- 
-}
-
-section{
-  
-}
-
-div.list{
     
-    
-    justify-content: center;
-}
-.list ul{
-    margin: 0 auto;
 }
 
-.list h2{
-    
-    display: flex;
-    flex-flow: column;
-    flex-direction: column;
-    text-align: center;
-}
-
-.list li{
-    display: flex;
-    flex-flow: column;
-    flex-direction: column;
-    text-align: center;
-    padding: 2px;
-    justify-content: center;
-}
 
 div.social{
     margin: 0 auto;
@@ -89,10 +61,27 @@ a{
     color: white;
 }
 .social i{
-    padding: 5px;
+    padding: 25px;
     text-align: center;
     
-    
+}
+
+h1 h2 h3 h4{
+    display: block;
+}
+
+h4{
+   /* padding: 0;*/
+    margin: 1%;
+}
+
+footer{
+    bottom: 90%;
+    text-align: center;
+}
+
+h2{
+    margin: 5px;
 }
 
 
