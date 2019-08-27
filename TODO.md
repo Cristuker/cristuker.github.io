@@ -12,4 +12,3 @@
 [x] - Sobre mim
 [x] - Foto
 [x] - Deixar a imagem de fundo mais leve
-
