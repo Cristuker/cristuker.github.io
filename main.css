@@ -10,7 +10,7 @@ body{
 div#background{
     display: block;
     background-repeat: no-repeat;
-    /*background-image: url(./background-image/img-leve.jpg);*/
+    
     background-size: 100%;
     position: absolute;
     bottom: 0;
@@ -67,7 +67,7 @@ h1 h2 h3 h4{
 }
 
 h4{
-   /* padding: 0;*/
+
     margin: 1%;
 }
 
