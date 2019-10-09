@@ -1,10 +1,9 @@
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: aqua;
+    background-color: black;
     color: white;
     margin:0;
     font-size: 16pt;
-    
 }
 
 div#background{
@@ -19,7 +18,7 @@ div#background{
     top:0;
     overflow: auto;
     background-size: cover;
-    padding: 3em;
+    padding: 1em;
     height: auto;
     margin: 0 auto;
 }
@@ -36,13 +35,21 @@ div.container{
     margin: 0 auto;
     justify-content: center;
     text-align: center;
-}
-
-.container figure{
-    margin: 0 auto;
     
 }
 
+ h1 h2 h3 h4{
+    display: block;
+    margin-top: 1px;
+}
+
+h4{
+    margin: 1%;
+}
+
+h2{
+    margin: 2px;
+}
 
 div.social{
     margin: 0 auto;
@@ -62,21 +69,10 @@ a{
     
 }
 
-h1 h2 h3 h4{
-    display: block;
-}
-
-h4{
-    margin: 1%;
-}
 
 footer{
     bottom: 90%;
     text-align: center;
-}
-
-h2{
-    margin: 5px;
 }
 
 
