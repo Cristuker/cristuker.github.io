@@ -10,7 +10,7 @@ body{
 div#background{
     display: block;
     background-repeat: no-repeat;
-    background-image: url(./background-image/img-leve.jpg);
+    /*background-image: url(./background-image/img-leve.jpg);*/
     background-size: 100%;
     position: absolute;
     bottom: 0;
