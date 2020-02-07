@@ -1,8 +1,9 @@
-API
-[] - Express
-[] - MongoDB connection
-[] - CRUD
-    [] - Create
-    [] - Read
-    [] - Update
+API 
+[] - Express 
+[] - MongoDB connection 
+[] - Model
+[] - CRUD 
+    [] - Create 
+    [] - Read 
+    [] - Update 
     [] - Delete
