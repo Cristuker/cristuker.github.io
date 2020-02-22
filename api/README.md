@@ -1,0 +1,1 @@
+npm run dev - para iniciar a api

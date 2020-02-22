@@ -4,6 +4,10 @@ const app = express();
 const port = process.env.port || 3000;
 
 
+const middlewareTeste = (params) =>{
+    
+}
+
 app.get('/',(req,res) =>{
     res.send('Hello')
 })
