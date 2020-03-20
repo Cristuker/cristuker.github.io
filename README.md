@@ -5,5 +5,4 @@ A ideia desse projeto é basicamente treinar/mostrar as minhas skills com ReactJ
 ## Pacotes
 * React-router-dom
 * Material-ui
-* Yarn (Um 'substituto' para o npm)
-
+* Yarn 
