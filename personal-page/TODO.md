@@ -7,5 +7,6 @@ Interface (React)
     [] - About
     [] - Home
     [] - Mensagens
+    [] - Icons
 [] - Rotas
 [] - Material UI

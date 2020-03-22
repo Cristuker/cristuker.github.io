@@ -11,11 +11,11 @@ const navBar = () =>{
         indicatorColor="primary"
         textColor="primary"
         >
-        <Tab label="Home"/>
-        <Tab label="Skills"/>
-        <Tab label="Messages"/>
-        <Tab label="Contact"/>
-        <Tab label="About"/>
+        <Tab href="/" label="Home"/>
+        <Tab href="/skills" label="Skills"/>
+        <Tab href="/messages" label="Messages"/>
+        <Tab href="/contact" label="Contact"/>
+        <Tab href="/about" label="About"/>
         </Tabs>
     </Paper>
     </>
