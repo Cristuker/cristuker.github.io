@@ -7,33 +7,33 @@ import Avatar from '@material-ui/core/Avatar';
 import './style.css';
 import Picture from '../../assets/dog.jpg';
 
-const useStyles =  makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
 
-    root:{
-        display:'flex',
-        '& > *':{
+    root: {
+        display: 'flex',
+        '& > *': {
             margin: theme.spacing(1),
         }
     }
 }))
 
-const Home = () =>{
-    
+const Home = () => {
+
     const classes = useStyles();
 
-    return(<>
-        <Container id="header">
-            <div className={classes.root} >
-            <Avatar src={Picture} />
-            <h1>Cristian Silva</h1>
-            </div>
-
-        </Container>
-        <Navbar></Navbar>
-        <Container>
-            <Routes></Routes>
-        </Container>
-    </>
+    return (
+        <>
+            <Container id="header">
+                <div className={classes.root} >
+                    <Avatar id="Avatar" src={Picture} />
+                </div>
+                <h1>Cristian Silva</h1> 
+            </Container>
+            <Navbar></Navbar>
+            <Container>
+                <Routes></Routes>
+            </Container>
+        </>
     )
 }
 
