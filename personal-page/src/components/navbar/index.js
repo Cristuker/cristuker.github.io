@@ -11,16 +11,18 @@ import Container from '@material-ui/core/Container';
 import './styles.css'
 
 
-const navBar = () =>{
+const navBar = () =>{    
+
     return(
     <Container id="container">
         <Paper elevation={3} square>
             <Tabs id="navbar" indicatorColor="primary" textColor="primary">
-                <HomeRoundedIcon className="icon"/><Tab href="/" label="Home"></Tab>
-                <CodeRoundedIcon className="icon"/><Tab href="/skills" label="Skills"/>
-                <ChatBubbleOutlineRoundedIcon className="icon" /><Tab href="/messages" label="Messages"/>
-                <PermContactCalendarRoundedIcon className="icon" /><Tab href="/contact" label="Contact"/>
-                <InfoRoundedIcon className="icon" /><Tab href="/about" label="About"/>
+                {/* <HomeRoundedIcon className="icon"/>  */}
+                <Tab icon={<HomeRoundedIcon/>} href="/" label="Home" />
+                <Tab icon={<CodeRoundedIcon/>} href="/skills" label="Skills"/>
+                <Tab icon={<ChatBubbleOutlineRoundedIcon/>} href="/messages" label="Messages"/>
+                <Tab icon={<PermContactCalendarRoundedIcon/>} href="/contact" label="Contact"/>
+                <Tab icon={<InfoRoundedIcon/>} href="/about" label="About"/>
             </Tabs>
         </Paper>
     </Container>

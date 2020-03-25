@@ -1,5 +1,5 @@
 Interface (React)
-[ ] - Minha foto e nome
+[ ] - Minha foto e nome (API do github)
 [ ] - Capa
 [x] - navbar
     [x] - Skills

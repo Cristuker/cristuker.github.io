@@ -1,39 +1,24 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Navbar from '../../components/navbar/index';
-import Routes from '../../routes';
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
-import './style.css';
-import Picture from '../../assets/dog.jpg';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-const useStyles = makeStyles(theme => ({
+const Home = () =>{
 
-    root: {
-        display: 'flex',
-        '& > *': {
-            margin: theme.spacing(1),
-        }
+    const [bio,setBio] = useState('');
+
+    try{
+        axios.get('https://api.github.com/users/cristuker')
+            .then((response)=>{
+                const { bio } = response.data;
+                setBio(bio)
+            });
+    }catch(error){
+        throw Error;
     }
-}))
-
-const Home = () => {
-
-    const classes = useStyles();
 
     return (
-        <>
-            <Container id="header">
-                <div className={classes.root} >
-                    <Avatar id="Avatar" src={Picture} />
-                </div>
-                <h1>Cristian Silva</h1> 
-            </Container>
-            <Navbar></Navbar>
-            <Container>
-                <Routes></Routes>
-            </Container>
-        </>
+    <>
+        <h1>{bio}</h1>
+    </>
     )
 }
 
