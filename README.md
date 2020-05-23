@@ -1,8 +1,4 @@
 # Site de apresentação
 
-A ideia desse projeto é basicamente treinar/mostrar as minhas skills com ReactJS 
+My personal web site
 
-## Pacotes
-* React-router-dom
-* Material-ui
-* Yarn 
