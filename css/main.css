@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: #1C1A1A;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+#profile {
+    position: block;
+    height: 199px;
+    align-content: center;
+    border-radius: 140px;
+}
+
+.center {
+    margin-top: 10rem;
+}
+
+#name {
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+#bio {
+    color: #FFFFFF;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#container-bio{
+    width: 80%;
+    margin: auto;
+}
