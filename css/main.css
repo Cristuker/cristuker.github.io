@@ -1,6 +1,14 @@
 body {
     text-align: center;
     background-color: #1C1A1A;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+}
+
+section{
+    margin-top: 4rem;
+    height: 100vh;
 }
 
 h1 {
@@ -30,16 +38,41 @@ h1 {
 }
 
 #bio {
+    font-size: 15px;
     color: #FFFFFF;
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
-#container-bio{
+#container-bio {
     width: 80%;
     margin: auto;
+}
+
+
+#contact {
+    text-align: center;    
+}
+
+.icon{
+    color: #E5E5E5;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#languages{
+    margin-top: -2rem;
+    text-align: right;
+}
+
+
+.btn{
+    color: #E5E5E5;
+    background-color: transparent;
+    border: #E5E5E5 1px solid;
+    padding: 15px;
 }
