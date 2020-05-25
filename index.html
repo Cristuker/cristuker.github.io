@@ -3,47 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Silva</title>
 </head>
 
-<body>
+<body onload="changeLanguage()">
     <section id="ProfileInfo">
         <div id="languages">
-            <button class="btn">pt</button>
-            <button class="btn">en</button>
-            <button class="btn">es</button>
+            <button type="button" onclick="changeLanguage('pt')" class="btnLanguage">pt</button>
+            <button type="button" onclick="changeLanguage('en')"class="btnLanguage">en</button>
+            <button type="button" onclick="changeLanguage('es')"class="btnLanguage">es</button>
         </div>
         <div>
             <img id="profile" src="images/Profile.jpeg" alt="Profile Photo">
         </div>
+        <br />
         <h2 id="name">//cristian silva</h2>
+        <br />
         <div id="container-bio">
             <p id="bio">
-                Amo programar, tenho fome de conhecimento e de codar, estou sempre estudando e dando meu melhor para ser
-                a minha melhor versão o meu melhor profissional. Estou focado na Stack Node.js, React.js e futuramente
-                React Native. Ultimamente venho focando meus estudos em Node.js
+                Fascinado na área de tecnologia desde 2014, com fome de conhecimento, codar se transformou na minha paixão. 
+                Em ambito profissional, tenho boa desenvoltura em trabalho em equipe e resolução de problemas. 
+                Sempre estudando para ser a melhor versão do meu lado profissional. Focado na Stack Node.js, React.js e futuramente React Native.
             </p>
         </div>
         <div id="contact">
-            <a class="icon" target="blank" href="mailto:cristian123105@gmail.com">
+            <a class="iconBio" target="blank" href="mailto:cristian123105@gmail.com">
                 <img src="icons/gmail.svg" />&nbsp;<p>cristian123105@gmail.com</p>
             </a>
-            <span class="icon"><img src="icons/location.svg" />&nbsp;<p>Guarujá, SP</p></span>
-            <a class="icon" target="blank" href="http://www.github.com/Cristuker"><img src="icons/github.svg" />
+            <span class="iconBio"><img src="icons/location.svg" />&nbsp;<p>Guarujá, SP</p></span>
+            <a class="iconBio" target="blank" href="http://www.github.com/Cristuker"><img src="icons/github.svg" />
                 &nbsp;<p>Cristuker</p></a>
-            <a class="icon" target="blank" href="https://twitter.com/tukeer01"><img src="icons/twitter.svg" />
+            <a class="iconBio" target="blank" href="https://twitter.com/tukeer01"><img src="icons/twitter.svg" />
                 &nbsp;<p>tukeer01</p></a>
-            <a class="icon" target="blank" href="http://www.linkedin.com/in/cristian-silva-dev/"><img
+            <a class="iconBio" target="blank" href="http://www.linkedin.com/in/cristian-silva-dev/"><img
                     src="icons/linkedin.svg" />&nbsp;<p>cristian-silva-dev/</p>
             </a>
         </div>
     </section>
-    <section id="skills">
+    <!-- <section id="skills">
         <h2 id="name">SKILLS</h2>
-        <p>In progress...</p>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img class="d-block w-33" src="images/skills/nodejs.webp"
+                        alt="Node JS">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-33" src="images/skills/docker.png"
+                        alt="Docker">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-33" src="images/skills/javascript.png"
+                        alt="JavaScript">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-33" src="images/skills/react.png"
+                        alt="ReactJS">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-2" src="images/skills/typescript.webp"
+                        alt="TypeScript">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
 
     </section>
     <section id="projects">
@@ -51,8 +86,17 @@
         <p>In progress...</p>
     </section>
 
-<script src="js/index.js"></script>
-
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script> -->
+        <script src="js/index.js"></script>
 </body>
 
 </html>

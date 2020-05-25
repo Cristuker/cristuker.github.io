@@ -56,23 +56,33 @@ h1 {
     text-align: center;    
 }
 
-.icon{
+.iconBio{
     color: #E5E5E5;
     text-decoration: none;
-    display: inline-flex;
+    display: -webkit-inline-box;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.iconBio:hover{
+    text-decoration: none   ;
 }
 
 #languages{
     margin-top: -2rem;
     text-align: right;
+    margin-right: 5rem;
 }
 
 
-.btn{
+.btnLanguage{
     color: #E5E5E5;
     background-color: transparent;
     border: #E5E5E5 1px solid;
     padding: 15px;
+}
+
+.skill{
+    height: 400px;
+    width: 500px;
 }
