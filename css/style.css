@@ -6,7 +6,7 @@ body {
     font-weight: normal;
 }
 
-section{
+section {
     margin-top: 4rem;
     height: 100vh;
 }
@@ -51,12 +51,11 @@ h1 {
     margin: auto;
 }
 
-
 #contact {
-    text-align: center;    
+    text-align: center;
 }
 
-.iconBio{
+.iconBio {
     color: #E5E5E5;
     text-decoration: none;
     display: -webkit-inline-box;
@@ -64,25 +63,63 @@ h1 {
     flex-wrap: wrap;
 }
 
-.iconBio:hover{
-    text-decoration: none   ;
+.iconBio:hover {
+    text-decoration: none;
 }
 
-#languages{
+#languages {
     margin-top: -2rem;
     text-align: right;
     margin-right: 5rem;
 }
 
-
-.btnLanguage{
+.btnLanguage {
     color: #E5E5E5;
     background-color: transparent;
     border: #E5E5E5 1px solid;
-    padding: 15px;
+    padding: 10px;
+    margin: 5px;
 }
 
-.skill{
-    height: 400px;
-    width: 500px;
+.skill {
+    margin: auto;
+}
+
+#allProjects {
+    margin: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-flow: ;
+}
+
+#project {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #E5E5E5;
+    border: #E5E5E5 1px solid;
+    border-radius: 4px;
+    width: 300px;
+    height: auto;
+    padding: 10px 0;
+}
+
+#language {
+    border: #E5E5E5 1px solid;
+    border-radius: 4px;
+    padding: 0 5px;
+    width: fit-content;
+    margin: auto;
+}
+
+#description {
+    margin: 10px 10px;
+    text-align: center;
+}
+
+#projectTitle{
+    font-size: 22px;
+    font-weight: bold;
 }
