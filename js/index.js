@@ -28,3 +28,33 @@ function changeLanguage(language = 'pt') {
         }
     }
 }
+
+let projectsComponents;
+
+const listComponents = data => {
+    return data.map(repo => {
+        return (`
+         <div id="project">
+             <span id="projectTitle">${repo.full_name}</span>
+             <p id="description">${repo.description}</p>
+             <span id="language">${repo.language}</span>
+         </div>
+         `)
+     }).join('')
+}
+
+function getRepository() {
+
+    const header =  new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+    })
+    fetch('https://api.github.com/users/Cristuker/repos',header)
+        .then(response => response.json())
+        .then(data => {
+            const el = document.getElementById('allProjects');
+            el.innerHTML = listComponents(data)
+        })
+        
+
+}
+
