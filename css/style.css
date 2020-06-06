@@ -4,6 +4,7 @@ body {
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
+    
 }
 
 section {
@@ -21,6 +22,7 @@ h1 {
     height: 199px;
     align-content: center;
     border-radius: 140px;
+    
 }
 
 .center {
@@ -44,11 +46,13 @@ h1 {
     line-height: 20px;
     text-align: center;
     margin-bottom: 5rem;
+    margin: auto;
 }
 
 #container-bio {
     width: 80%;
     margin: auto;
+    
 }
 
 #contact {
@@ -61,9 +65,11 @@ h1 {
     display: -webkit-inline-box;
     flex-direction: row;
     flex-wrap: wrap;
+    transition: color 0.10s;
 }
 
 .iconBio:hover {
+    color: rgba(229,229,229,0.3);
     text-decoration: none;
 }
 
@@ -83,18 +89,28 @@ h1 {
 
 .skill {
     margin: auto;
+    height: 350px;
 }
 
 #allProjects {
-    margin: 15px 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    flex-flow: ;
+    margin: 100px 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px ;
 }
 
-#project {
+.repoUrl {
+    color: #E5E5E5;
+    text-decoration: none;
+    transition: color 0.10s;
+}
+
+.repoUrl:hover {
+    text-decoration: none;
+    color: rgba(229,229,229,0.3);
+}
+
+.project {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -102,24 +118,61 @@ h1 {
     border: #E5E5E5 1px solid;
     border-radius: 4px;
     width: 300px;
-    height: auto;
     padding: 10px 0;
+    height: 100%;
 }
 
 #language {
     border: #E5E5E5 1px solid;
     border-radius: 4px;
     padding: 0 5px;
+    margin-bottom: 0;
     width: fit-content;
     margin: auto;
 }
 
 #description {
+    min-height: 100px;
     margin: 10px 10px;
     text-align: center;
 }
 
 #projectTitle{
-    font-size: 22px;
+    font-size: 14px;
     font-weight: bold;
+}
+
+@media(max-width:930px){
+
+   #allProjects {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+
+   #skills {
+        margin-top: 200px;
+   }
+
+   .project{
+       margin-bottom: 30px;
+   }
+
+   .skill {
+       height: 100px;
+   }
+
+   #contact {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+   }
+
+   #languages {
+        margin-bottom: 23px;
+
+
+   }
+
 }
