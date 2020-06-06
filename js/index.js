@@ -23,7 +23,7 @@ function changeLanguage(language = 'pt') {
             Always studying to be the best version of my professional side. Focused on Stack Node.js, React.js and later React Native.`
             break;
         }
-        default:{
+        default: {
             console.log('Opção invalida!');
         }
     }
@@ -34,27 +34,34 @@ let projectsComponents;
 const listComponents = data => {
     return data.map(repo => {
         return (`
-         <div id="project">
-             <span id="projectTitle">${repo.full_name}</span>
+         <div class="project">
+             <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
              <p id="description">${repo.description}</p>
-             <span id="language">${repo.language}</span>
+             <span id="language">${repo.language ? repo.language : ' - '}</span>
          </div>
          `)
-     }).join('')
+    }).join('')
 }
 
 function getRepository() {
 
-    const header =  new Headers({
+    const header = new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
     })
-    fetch('https://api.github.com/users/Cristuker/repos',header)
+    fetch('https://api.github.com/users/Cristuker/repos', header)
         .then(response => response.json())
         .then(data => {
+            console.log('data', data)
+            const repos = data.filter(repo => {
+                return repo.full_name !== 'Cristuker/You-Dont-Know-JS' &&
+                    repo.full_name !== 'Cristuker/Form-example' &&
+                    repo.full_name !== 'Cristuker/DiarioClasseDigital' &&
+                    repo.full_name !== 'Cristuker/api-restful-typescript'
+
+            })
+
             const el = document.getElementById('allProjects');
-            el.innerHTML = listComponents(data)
+            el.innerHTML = listComponents(repos)
         })
-        
 
 }
-
