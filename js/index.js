@@ -56,7 +56,9 @@ function getRepository() {
                 return repo.full_name !== 'Cristuker/You-Dont-Know-JS' &&
                     repo.full_name !== 'Cristuker/Form-example' &&
                     repo.full_name !== 'Cristuker/DiarioClasseDigital' &&
-                    repo.full_name !== 'Cristuker/api-restful-typescript'
+                    repo.full_name !== 'Cristuker/api-restful-typescript' &&
+                    repo.full_name !== 'Cristuker/cristuker.github.io' &&
+                    repo.full_name !== 'Cristuker/eloquente-javascript'
 
             })
 
