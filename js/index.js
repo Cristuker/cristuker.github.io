@@ -76,7 +76,8 @@ function getRepository() {
                     repo.full_name !== 'Cristuker/api-restful-typescript' &&
                     repo.full_name !== 'Cristuker/cristuker.github.io' &&
                     repo.full_name !== 'Cristuker/eloquente-javascript' &&
-                    repo.full_name !== 'Cristuker/ew-ubuntu-setup'
+                    repo.full_name !== 'Cristuker/ew-ubuntu-setup' &&
+                    repo.full_name !== 'Cristuker/Cristuker'
 
             })
 
