@@ -51,8 +51,9 @@ function changeLanguage(language = 'pt') {
 
 const listComponents = data => {
     return data.map(repo => {
+        if(repo.full_name === 'Cristuker/conteudo-gratuito') repo.language = 'Markdown'
         return (`
-         <div id="" class="project anime">
+         <div id="" data-aos="flip-right" class="project">
              <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
              <p id="description">${repo.description}</p>
              <span id="language">${repo.language ? repo.language : ' - '}</span>
