@@ -50,10 +50,10 @@ function changeLanguage(language = 'pt') {
 
 
 const listComponents = data => {
-    return data.map(repo => {
+    return data.map((repo,index) => {
         if(repo.full_name === 'Cristuker/conteudo-gratuito') repo.language = 'Markdown'
         return (`
-         <div id="" data-aos="flip-right" class="project">
+         <div id="" ${Math.floor(Math.random() * 10) % 2 === 0 ? 'data-aos="flip-right"' : 'data-aos="flip-left"' } class="project">
              <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
              <p id="description">${repo.description}</p>
              <span id="language">${repo.language ? repo.language : ' - '}</span>
