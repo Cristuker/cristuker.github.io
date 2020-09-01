@@ -1,3 +1,7 @@
+const reposToIgnore = ['Cristuker/You-Dont-Know-JS' , 'Cristuker/Form-example' , 'Cristuker/DiarioClasseDigital' , 
+'Cristuker/api-restful-typescript' , 'Cristuker/cristuker.github.io' , 'Cristuker/eloquente-javascript' , 
+'Cristuker/ew-ubuntu-setup' , 'Cristuker/Cristuker' , 'Cristuker/novatorem' , 'Cristuker/rxjs']
+
 function changeLanguage(language = 'pt') {
 
     switch (language) {
@@ -50,8 +54,7 @@ function changeLanguage(language = 'pt') {
 
 
 const listComponents = data => {
-    return data.map((repo,index) => {
-        if(repo.full_name === 'Cristuker/conteudo-gratuito') repo.language = 'Markdown'
+    return data.map((repo) => {
         return (`
          <div id="" ${Math.floor(Math.random() * 10) % 2 === 0 ? 'data-aos="flip-right"' : 'data-aos="flip-left"' } class="project">
              <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
@@ -63,7 +66,6 @@ const listComponents = data => {
 }
 
 function getRepository() {
-
     const header = new Headers({
         'User-agent': 'Mozilla/4.0 Custom User Agent'
     })
@@ -71,14 +73,8 @@ function getRepository() {
         .then(response => response.json())
         .then(data => {
             const repos = data.filter(repo => {
-                return repo.full_name !== 'Cristuker/You-Dont-Know-JS' &&
-                    repo.full_name !== 'Cristuker/Form-example' &&
-                    repo.full_name !== 'Cristuker/DiarioClasseDigital' &&
-                    repo.full_name !== 'Cristuker/api-restful-typescript' &&
-                    repo.full_name !== 'Cristuker/cristuker.github.io' &&
-                    repo.full_name !== 'Cristuker/eloquente-javascript' &&
-                    repo.full_name !== 'Cristuker/ew-ubuntu-setup' &&
-                    repo.full_name !== 'Cristuker/Cristuker'
+                console.log(reposToIgnore)
+                return  reposToIgnore.includes(repo.full_name) ? '' : repo.full_name ;
 
             })
 
