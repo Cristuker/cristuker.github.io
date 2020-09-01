@@ -78,8 +78,8 @@ function getRepository() {
 
             })
 
-            const el = document.getElementById('allProjects');
-            el.innerHTML = listComponents(repos)
+            const reposDiv = document.getElementById('allProjects');
+            reposDiv.innerHTML = listComponents(repos)
         })
 
 }
