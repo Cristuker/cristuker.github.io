@@ -56,7 +56,7 @@ function changeLanguage(language = 'pt') {
 const listComponents = data => {
     return data.map((repo) => {
         return (`
-         <div id="" class="project" alt="One of my project and they description">
+         <div  ${Math.floor(Math.random() * 10) % 2 === 0 ? 'data-aos="flip-right"' : 'data-aos="flip-left"' } class="project" alt="One of my project and they description">
              <a class="repoUrl" href="${repo.html_url}" target="blank" id="projectTitle">${repo.full_name}</a>
              <p id="description">${repo.description}</p>
              <span id="language">${repo.language ? repo.language : ' - '}</span>
