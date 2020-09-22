@@ -1,17 +1,19 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     text-align: center;
-    background-color: #1C1A1A;
+    background-color: #1c1a1a;
     font-family: Roboto Mono;
     font-style: normal;
     font-weight: normal;
-    
 }
 
 section {
     margin-top: 4rem;
     height: 100vh;
     margin-bottom: 100px;
-    margin-top: -100px;
 }
 
 h1 {
@@ -24,7 +26,6 @@ h1 {
     height: 199px;
     align-content: center;
     border-radius: 140px;
-    
 }
 
 .center {
@@ -32,10 +33,10 @@ h1 {
 }
 
 .name {
-    color: #FFFFFF;
-    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
     font-style: normal;
-    font-weight: normal !important; 
+    font-weight: normal !important;
     font-size: 30px !important;
     line-height: 35px;
     text-align: center;
@@ -43,7 +44,7 @@ h1 {
 
 #bio {
     font-size: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -62,17 +63,20 @@ h1 {
 }
 
 .iconBio {
-    color: #E5E5E5;
+    color: #e5e5e5;
     text-decoration: none;
     display: -webkit-inline-box;
     flex-direction: row;
     flex-wrap: wrap;
+
     transition: color 0.10s;
     margin-right: 15px;
+    transition: color 0.1s;
+
 }
 
 .iconBio:hover {
-    color: rgba(229,229,229,0.3);
+    color: rgba(229, 229, 229, 0.3);
     text-decoration: none;
 }
 
@@ -87,9 +91,9 @@ h1 {
 }
 
 .btnLanguage {
-    color: #E5E5E5;
+    color: #e5e5e5;
     background-color: transparent;
-    border: #E5E5E5 1px solid;
+    border: #e5e5e5 1px solid;
     padding: 10px;
     margin: 5px;
 }
@@ -103,26 +107,26 @@ h1 {
     margin: 100px 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:20px ;
+    grid-gap: 20px;
 }
 
 .repoUrl {
-    color: #E5E5E5;
+    color: #e5e5e5;
     text-decoration: none;
-    transition: color 0.10s;
+    transition: color 0.1s;
 }
 
 .repoUrl:hover {
     text-decoration: none;
-    color: rgba(229,229,229,0.3);
+    color: rgba(229, 229, 229, 0.3);
 }
 
 .project {
     margin: auto;
     display: flex;
     flex-direction: column;
-    color: #E5E5E5;
-    border: #E5E5E5 1px solid;
+    color: #e5e5e5;
+    border: #e5e5e5 1px solid;
     border-radius: 4px;
     width: 300px;
     padding: 10px 0;
@@ -130,7 +134,7 @@ h1 {
 }
 
 #language {
-    border: #E5E5E5 1px solid;
+    border: #e5e5e5 1px solid;
     border-radius: 4px;
     padding: 0 5px;
     margin-bottom: 0;
@@ -144,62 +148,43 @@ h1 {
     text-align: center;
 }
 
-#projectTitle{
+#projectTitle {
     font-size: 14px;
     font-weight: bold;
 }
 
-.slide-top {
-	animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@keyframes slide-top {
-    0% {
-      transform: translateY(0);
+@media (max-width: 930px) {
+    #allProjects {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    100% {
-      transform: translateY(150px);
-      height: 100vh;
-    }
-  }
 
-  
-@media(max-width:930px){
-
-   #allProjects {
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-   }
-
-   #skills {
+    #skills {
         margin-top: 200px;
         height: auto;
-   }
+    }
 
-   .project{
-       margin-bottom: 30px;
-   }
+    .project {
+        margin-bottom: 30px;
+    }
 
-   #projects{
-       margin-top: 300px;
-   }
+    #projects {
+        margin-top: 300px;
+    }
 
-   .skill {
-       height: 100px;
-   }
+    .skill {
+        height: 100px;
+    }
 
-   #contact {
+    #contact {
         margin-top: 30px;
         display: flex;
         flex-flow: column;
         align-items: center;
-   }
+    }
 
-   #languages {
+    #languages {
         margin-bottom: 23px;
-
-
-   }
-
+    }
 }
