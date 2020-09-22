@@ -54,7 +54,6 @@ h1 {
 #container-bio {
     width: 80%;
     margin: auto;
-    
 }
 
 #contact {
@@ -69,11 +68,16 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     transition: color 0.10s;
+    margin-right: 15px;
 }
 
 .iconBio:hover {
     color: rgba(229,229,229,0.3);
     text-decoration: none;
+}
+
+.iconBio > img {
+    margin-right: 7px;
 }
 
 #languages {
