@@ -12,8 +12,6 @@ Fique a vontade para fazer um fork e deixar com a sua cara 😁
 * CSS
 * JavaScript
 * Responsividade
-* Gulp
-* jQuery
 
 <br />
 <br />

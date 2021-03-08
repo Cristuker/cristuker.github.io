@@ -1,6 +1,5 @@
 const reposToIgnore = ['Cristuker/You-Dont-Know-JS' , 'Cristuker/Form-example' , 'Cristuker/DiarioClasseDigital' , 
-'Cristuker/api-restful-typescript' , 'Cristuker/cristuker.github.io' , 'Cristuker/eloquente-javascript' , 
-'Cristuker/ew-ubuntu-setup' , 'Cristuker/Cristuker' , 'Cristuker/novatorem' , 'Cristuker/rxjs']
+'Cristuker/api-restful-typescript', 'Cristuker/eloquente-javascript' , 'Cristuker/Cristuker' , 'Cristuker/rxjs', 'Cristuker/elixir-prac'];
 
 function changeLanguage(language = 'pt') {
 
