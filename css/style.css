@@ -153,6 +153,11 @@ h1 {
     font-weight: bold;
 }
 
+.devToIcon {
+    height: 26px; 
+    width: 24px;
+}
+
 @media (max-width: 930px) {
     #allProjects {
         display: flex;
