@@ -6,9 +6,11 @@ function changeLanguage(language = 'pt') {
     switch (language) {
         case 'pt': {
             const bio = document.getElementById('bio');
-            bio.innerHTML = `Fascinado na área de tecnologia desde 2014, com fome de conhecimento, codar se transformou na minha paixão. 
-            Em ambito profissional, tenho boa desenvoltura em trabalho em equipe e resolução de problemas. 
-            Sempre estudando para ser a melhor versão do meu lado profissional. Focado na Stack Node.js, React.js e futuramente React Native.`
+            bio.innerHTML = `Sou desenvolver Fullstack focado em JS. Amo trabalhar com JS e seus frameworks, 
+            atualmente eu tenho experiência em Angular, React, Node.js, NestJS e Next.js. Gosto de trabalhar como 
+            Fullstack porém também aceito oportunidades apenas como desenvolvedor backend. Estou sempre estudando e 
+            buscando me aperfeiçoar para ser sempre a minha melhor versão.
+            `
 
             const skills = document.getElementById('skillTitle')
             skills.innerHTML = `HABILIDADES`
@@ -18,25 +20,13 @@ function changeLanguage(language = 'pt') {
 
             break;
         }
-        case 'es': {
-            const bio = document.getElementById('bio');
-            bio.innerHTML = `Fascinado en el área de tecnología desde 2014, ávido de conocimiento, el codar se ha convertido en mi pasión.
-            En un entorno profesional, tengo buenas habilidades en trabajo en equipo y resolución de problemas.
-            Siempre estudiando para ser la mejor versión de mi lado profesional. Centrado en Stack Node.js, React.js y más tarde React Native.`
-
-            const skills = document.getElementById('skillTitle')
-            skills.innerHTML = `HABILIDADES`
-
-            const project = document.getElementById('projectTitle')
-            project.innerHTML = `PROYECTOS`
-
-            break;
-        }
         case 'en': {
             const bio = document.getElementById('bio');
-            bio.innerHTML = `Fascinated in the technology area since 2014, hungry for knowledge, codar has become my passion.
-            In a professional environment, I have good skills in teamwork and problem solving.
-            Always studying to be the best version of my professional side. Focused on Stack Node.js, React.js and later React Native.`
+            bio.innerHTML = `I'm developing Fullstack focused on JS. 
+            I love working with JS and its frameworks, currently 
+            I have experience in Angular, React, Node.js, NestJS and Next.js. I like working as a Fullstack but 
+            I also accept opportunities only as a backend developer. I'm always studying and looking to improve 
+            myself to always be my best version.`
 
             const skills = document.getElementById('skillTitle')
             skills.innerHTML = `SKILLS`
