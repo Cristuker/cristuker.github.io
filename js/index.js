@@ -72,14 +72,15 @@ const listComponents = data => {
 const listArticles = data => {
     return data.map((article) => {
         return (`
-         <div ${Math.floor(Math.random() * 10) % 2 === 0 ? 'data-aos="flip-right"' : 'data-aos="flip-left"'} class="article" alt="One of my project and they description">
+         <div ${Math.floor(Math.random() * 10) % 2 === 0 ? 'data-aos="flip-right"' : 'data-aos="flip-left"'} class="project" alt="One of my project and they description">
              <a class="repoUrl" href="${article.canonical_url}" target="blank" id="projectTitle">${article.title}</a>
+             <p id="description">${article.description}</p>
              <div id="tagsContainer">
                 ${article.tag_list.map(tag => `<span class="tag">#${tag}</span>`)}
              </div>
          </div>
          `).replaceAll(',', '');
-    });
+    }).join('');
 }
 
 function getRepository() {

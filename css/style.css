@@ -33,18 +33,6 @@ h1 {
     margin-top: 10rem;
 }
 
-.article {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    color: #e5e5e5;
-    border: #e5e5e5 1px solid;
-    border-radius: 4px;
-    width: 300px;
-    padding: 10px;
-    height: 100%;
-}
-
 #tagsContainer {
     padding-top: 10px;
     display: flex;
@@ -103,7 +91,6 @@ h1 {
     display: -webkit-inline-box;
     flex-direction: row;
     flex-wrap: wrap;
-
     transition: color 0.10s;
     margin-right: 15px;
     transition: color 0.1s;
@@ -146,9 +133,10 @@ h1 {
 }
 
 #allArticles {
-    padding-bottom: 150px !important;
-    width: 50%;
-    margin: auto;
+    margin: 100px 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .repoUrl {
@@ -162,7 +150,7 @@ h1 {
     color: rgba(229, 229, 229, 0.3);
 }
 
-.project {
+.article {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -172,6 +160,18 @@ h1 {
     width: 300px;
     padding: 10px 0;
     height: 100%;
+}
+
+.project {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #e5e5e5;
+    border: #e5e5e5 1px solid;
+    border-radius: 4px;
+    width: 300px;
+    padding: 10px 0;
+    height: fit-content;
 }
 
 #language {
