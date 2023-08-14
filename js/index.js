@@ -25,13 +25,16 @@ function changeLanguage(language = 'pt') {
             atualmente eu tenho experiência em Angular, React, Node.js, NestJS e Next.js. Gosto de trabalhar como 
             Fullstack porém também aceito oportunidades apenas como desenvolvedor backend. Estou sempre estudando e 
             buscando me aperfeiçoar para ser sempre a minha melhor versão.
-            `
+            `;
 
-            const skills = document.getElementById('skillTitle')
-            skills.innerHTML = `HABILIDADES`
+            const skills = document.getElementById('skillTitle');
+            skills.innerHTML = `HABILIDADES`;
 
-            const project = document.getElementById('projectTitle')
-            project.innerHTML = `PROJETOS`
+            const project = document.getElementById('projectTitle');
+            project.innerHTML = `PROJETOS`;
+
+            const footer = document.getElementById('footer');
+            footer.innerHTML = `Mais informações em: <a target="_blank" href="https://bento.me/cmsdev">bento.me/cmsdev</a>`;
 
             break;
         }
@@ -41,13 +44,17 @@ function changeLanguage(language = 'pt') {
             I love working with JS and its frameworks, currently 
             I have experience in Angular, React, Node.js, NestJS and Next.js. I like working as a Fullstack but 
             I also accept opportunities only as a backend developer. I'm always studying and looking to improve 
-            myself to always be my best version.`
+            myself to always be my best version.`;
 
-            const skills = document.getElementById('skillTitle')
-            skills.innerHTML = `SKILLS`
+            const skills = document.getElementById('skillTitle');
+            skills.innerHTML = `SKILLS`;
 
-            const project = document.getElementById('projectTitle')
-            project.innerHTML = `PROJECTS`
+            const project = document.getElementById('projectTitle');
+            project.innerHTML = `PROJECTS`;
+
+            const footer = document.getElementById('footer');
+            footer.innerHTML = `More information: <a target="_blank" href="https://bento.me/cmsdev">bento.me/cmsdev</a>`;
+
             break;
         }
         default: {

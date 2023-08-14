@@ -85,6 +85,21 @@ h1 {
     margin-top: 81px;
 }
 
+#footer {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin: auto;
+    position: absolute;
+    height: 50px;
+    bottom: -630vh;
+    width: 100vw;
+}
+
+
 .iconBio {
     color: #e5e5e5;
     text-decoration: none;
@@ -200,15 +215,30 @@ h1 {
 }
 
 @media (max-width: 930px) {
-    #allProjects {
+    #allProjects, #allArticles {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+    
 
     #skills {
         margin-top: 200px;
         height: auto;
+    }
+
+    #footer {
+        text-align: center;
+        font-size: 15px;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 5rem;
+        margin: auto;
+        position: absolute;
+        height: 50px;
+        bottom: -1580vh;
+        width: 100vw;
     }
 
     .project {
